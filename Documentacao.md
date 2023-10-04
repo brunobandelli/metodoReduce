@@ -2,6 +2,7 @@
 O método reduce() é uma função em JavaScript que é usada para reduzir um array a um único valor. Ele itera sobre cada elemento do array, aplicando uma função de callback e acumulando um valor resultante. A função de callback recebe quatro parâmetros: acumulador, valor atual, índice atual e array.
 Sendo os dois primeiros parametros como obrigatórios, acumulador e valor atual.
 
+Observação:
 Além disso o metodo reduce() tem uma particularidade, pois possui um parametro opcional extra fora do callback, que serve para determinar o valor inicial do valor do acomulador.
 
 O método reduce() essencialmente acumula os valores de um array para produzir um único valor resultante. A operação de acumulação é controlada pela função de callback que você fornece como argumento para o reduce().
@@ -9,21 +10,23 @@ O método reduce() essencialmente acumula os valores de um array para produzir u
 Sintaxe:
 
 array.reduce(
-  function(acumulador, valorAtual, índice, array) {
+  function(acumulador, valorAtual, índiceAtual, array) {
     // Lógica de redução aqui
   },
   initialValue  // Opcional: Valor inicial do acumulador
 );
 
 
+
 Parametros obrigatórios:
 acumulador: O valor acumulado durante a redução, atualizado a cada iteração.
 valorAtual: O valor do elemento atual do array durante a iteração.
 
-Parametros opcionais:
-índice: O índice do elemento atual do array durante a iteração.
+Parametros dentro do callback Opcionais:
+índiceAtual: O índice do elemento atual do array durante a iteração.
 array: O array no qual a função reduce() foi chamada.
-callback: A função que será chamada em cada elemento do array. Ela aceita quatro argumentos: acumulador, valorAtual, índice e array.
+
+Parametro fora do callback Opcional Extra:
 initialValue: Valor inicial do acumulador. Se não for fornecido, o primeiro elemento do array será usado como valor inicial do acumulador e a iteração começará a partir do segundo elemento.
 
 Obs:
