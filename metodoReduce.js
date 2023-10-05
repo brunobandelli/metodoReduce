@@ -97,7 +97,7 @@ console.log("-------------------------------------------------------------------
 const mesesDias = {
   janeiro: 31,
   fevereiro: 28,
-  marco: 31
+  abril: 30
 };
 
 const mesMaisDias = Object.keys(mesesDias).reduce((acumulador, valorAtual) =>
