@@ -18,7 +18,7 @@ array.reduce(
 
 
 
-Parametros obrigatórios:
+Parametros dentro do callback obrigatórios:
 acumulador: O valor acumulado durante a redução, atualizado a cada iteração.
 valorAtual: O valor do elemento atual do array durante a iteração.
 
@@ -26,7 +26,7 @@ Parametros dentro do callback Opcionais:
 índiceAtual: O índice do elemento atual do array durante a iteração.
 array: O array no qual a função reduce() foi chamada.
 
-Parametro fora do callback Opcional Extra:
+Parametro FORA do callback OpcionalExtra:
 initialValue: Valor inicial do acumulador. Se não for fornecido, o primeiro elemento do array será usado como valor inicial do acumulador e a iteração começará a partir do segundo elemento.
 
 Obs:
